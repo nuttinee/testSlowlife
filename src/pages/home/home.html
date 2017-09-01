@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <ion-icon name="beer"></ion-icon>
+        Welcome to Slow life Application. 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <button ion-button block (click)="openSearchPage()">
+      <ion-icon name="search"> </ion-icon>ค้นหา</button>
+  <button ion-button block (click)="openShowPage()">
+      <ion-icon name="paper"> </ion-icon>รายละเอียด</button>
+  <button ion-button block (click)="openFavoritePage()">
+      <ion-icon name="ribbon"> </ion-icon>แนะนำ</button>
+
+  
 </ion-content>
+
